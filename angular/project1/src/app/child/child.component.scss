@@ -2,3 +2,34 @@ p{
   background-color: aqua;
   color: black;
 }
+p::after{
+  content:'#######'
+}
+$borderRadii:15px;
+@mixin properties($bgColor){
+  content:'';
+  display:block;
+  width:50px;
+  height:50px;
+  border-radius: $borderRadii;
+  background-color:$bgColor ;
+}
+.thirdH3::before{
+@include properties(blueviolet);
+}
+.thirdH3::after{
+  @include properties(rgb(8, 91, 216));
+  }
+  .secondH3:hover::after{
+content:"thank you sir";
+display:block;
+font-size: larger;
+ padding:15px;
+ font-weight:bolder;
+ background-color:black;
+ color:red;
+ border-radius: $borderRadii;
+ width:150px;
+ margin-left: 15%;
+  }
+
