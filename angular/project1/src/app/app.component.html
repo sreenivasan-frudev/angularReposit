@@ -1,2 +1,18 @@
  <app-child></app-child>
+ <!-- <div *ngFor="let item of list;" >
+<h1>{{item}}</h1>
+ </div>
+ <div *ngFor="let item of list;">
+    <h1 *ngIf="item%2==0">even numbers  {{item}}</h1>
+     </div>
+ <div *ngFor="let item of list;" >
+        <h1 *ngIf="item%2==1">odd numbers {{item}}</h1>
+</div>
+
+    <div [ngSwitch]="items%2">
+        <h2 *ngSwitchCase="0">even number</h2>
+        <h2 *ngSwitchCase="1">odd number</h2>
+      </div> -->
+
+
 <router-outlet></router-outlet>
